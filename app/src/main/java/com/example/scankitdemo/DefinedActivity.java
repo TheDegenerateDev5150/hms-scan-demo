@@ -81,7 +81,7 @@ public class DefinedActivity extends Activity {
 
 
         //Initialize the RemoteView instance, and set callback for the scanning result.
-        remoteView = new RemoteView.Builder().setContext(this).setBoundingBox(rect).setFormat(HmsScan.ALL_SCAN_TYPE).build();
+        remoteView = new RemoteView.Builder().setContext(this).setFormat(HmsScan.ALL_SCAN_TYPE).build();
         // When the light is dim, this API is called back to display the flashlight switch.
         flushBtn = findViewById(R.id.flush_btn);
         remoteView.setOnLightVisibleCallback(new OnLightVisibleCallBack() {
